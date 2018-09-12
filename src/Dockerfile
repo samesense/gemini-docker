@@ -9,6 +9,3 @@ RUN wget https://github.com/arq5x/gemini/raw/master/gemini/scripts/gemini_instal
 RUN python gemini_install.py /gemini/bin/ /gdata/
 
 ENV PATH $PATH:/gemini/bin/
-
-#ENTRYPOINT ["gemini"]
-#CMD ["--help"]
