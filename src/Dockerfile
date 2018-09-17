@@ -4,8 +4,8 @@ MAINTAINER Dan Gaston <daniel.gaston@gmail.com>
 RUN sudo apt-get update && apt-get install -y build-essential python git gcc g++ zlib1g-dev wget curl
 
 RUN mkdir /data/
-RUN mkdir -p /tools/
+RUN mkdir /tools/
 RUN wget https://github.com/arq5x/gemini/raw/master/gemini/scripts/gemini_install.py
 RUN python gemini_install.py /tools /data
 
-ENV PATH $PATH:/tools/bin/
+ENV PATH $PATH:/tools/bin/:/data/anaconda/bin
