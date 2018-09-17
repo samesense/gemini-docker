@@ -9,3 +9,7 @@ RUN wget https://github.com/arq5x/gemini/raw/master/gemini/scripts/gemini_instal
 RUN python gemini_install.py /tools /data
 
 ENV PATH $PATH:/tools/bin/:/data/anaconda/bin
+
+RUN python gemini/install-data.py /data/gemini_data/
+RUN gemini update --dataonly --extra cadd_score
+RUN gemini update --dataonly --extra gerp_bp
