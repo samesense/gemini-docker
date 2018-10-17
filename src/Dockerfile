@@ -11,5 +11,5 @@ ENV PATH $PATH:/tools/bin/:/data/anaconda/bin
 
 #RUN git clone https://github.com/arq5x/gemini
 #RUN python /gemini/gemini/install-data.py /data/gemini_data/
-RUN gemini update --dataonly --extra cadd_score
-RUN gemini update --dataonly --extra gerp_bp
+#RUN gemini update --dataonly --extra cadd_score
+#RUN gemini update --dataonly --extra gerp_bp
